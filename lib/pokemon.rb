@@ -25,7 +25,7 @@ class Pokemon
   pikachu = Pokemon.(name => 'Pikachu', type =>'electric', @db)
   pikachu.save
 
-  magikarp = Pokemon.new(name => 'Magikarp', 'water', @db)
+  magikarp = Pokemon.new(name => 'Magikarp', type =>'water', @db)
   magikarp.save
 
   pikachu.alter_hp(59, @db)
