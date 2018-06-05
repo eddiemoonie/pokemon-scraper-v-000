@@ -24,6 +24,7 @@ class Pokemon
 
   pikachu = Pokemon.new('Pikachu', 'electric', @db)
   pikachu.save
+
   magikarp = Pokemon.new('Magikarp', 'water', @db)
   magikarp.save
 
