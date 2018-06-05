@@ -22,7 +22,7 @@ class Pokemon
     db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", new_hp, self.id)
   end
 
-  pikachu = Pokemon.(name => 'Pikachu', type =>'electric', @db)
+  pikachu = Pokemon.new(name => 'Pikachu', type => 'electric', @db)
   pikachu.save
 
   magikarp = Pokemon.new(name => 'Magikarp', type =>'water', @db)
