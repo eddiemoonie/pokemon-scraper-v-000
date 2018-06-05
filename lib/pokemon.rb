@@ -27,9 +27,6 @@ class Pokemon
   magikarp = Pokemon.new('Magikarp', 'water', @db)
   magikarp.save
 
-
-
-
   pikachu.alter_hp(59, @db)
   magikarp.alter_hp(0, @db)
 
