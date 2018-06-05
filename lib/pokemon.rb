@@ -22,10 +22,14 @@ class Pokemon
     db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", new_hp, self.id)
   end
 
-  pikachu = Pokemon.save('Pikachu', 'electric', @db)
-  magikarp = Pokemon.save('Magikarp', 'water', @db)
+  pikachu = Pokemon.new('Pikachu', 'electric', @db)
+  pikachu.save
+  magikarp = Pokemon.new('Magikarp', 'water', @db)
+  magikarp.save
 
-  
+
+
+
   pikachu.alter_hp(59, @db)
   magikarp.alter_hp(0, @db)
 
